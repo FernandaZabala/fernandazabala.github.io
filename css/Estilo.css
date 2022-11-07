@@ -79,36 +79,7 @@ color:#2d2e2e;
     width: 100%;
     
 }
-/*iframe de youtube*/
-.iframe{
-    width: 90%;
-    margin: auto;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    background-color: #Ffc215;
-}
-.contenedorprueba {
-    width: 90%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 3%;
-}
 
-.contenedor-responsivo {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-    width: 100%;
-    background-color:rgb(156, 151, 151);  
-}
-.contenedor-responsivo iframe {
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-}
-/*termina iframe youtube*/
 
  /* Seccion Formulario*/
 
