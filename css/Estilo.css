@@ -27,7 +27,7 @@ body{
     width: max-content;
     margin-left: 2vw;
     font-family: Grand Hotel, cursive ;
-    font-size:7vh;
+    font-size:5vh;
     color: #2d2e2e;
 }
 .nav-label, .nav-input{
@@ -403,7 +403,7 @@ margin-bottom: 4vh;
         width: max-content;
         margin-left:2vw ;
         margin-right: 3vw;
-        font-size:6vh;
+        font-size:4vh;
     }
     .nav-label, .nav-input{
         display:none;
@@ -420,7 +420,7 @@ margin-bottom: 4vh;
     }
     .nav-menu ul li>a{
         font-weight:900;
-        font-size: 3vh;
+        font-size: 2vh;
         
     }
     /*seccion contacto*/
