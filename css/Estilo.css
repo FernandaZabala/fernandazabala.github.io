@@ -464,8 +464,8 @@ margin-bottom: 4vh;
     width:200px;
    }
    .card:hover{
-    width: 300px;
-    height:400px;
+    height:300px;
+    width:200px;
 }
 
    }
@@ -539,10 +539,7 @@ h2{margin-top: 3vh;
 .parrafo{
     font-size: 4vh;
 }
-.cajaapi{
-    width:95vw;
-    margin-left: 0;
-}
+
 #formulario{
    margin:1vh auto;
 }
