@@ -15,77 +15,63 @@ body{
 }
 /* MEDIA QUERY PARA PANTALLAS GRANDES */
 
-.contenedor-nav {
-    background-color:#e0e0e1;
-    display:flex;
-    height:20vh;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
+header{
+    width: 100%; 
+    background:#e0e0e1 ;
 }
 .logo{
-    width: max-content;
-    margin-left: 2vw;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 5%;
     font-family: Grand Hotel, cursive ;
     font-size:5vh;
     color: #2d2e2e;
+    background-color: #Ffc215 ;
 }
-.nav-label, .nav-input{
-    display:none;
+
+#btn-menu{
+    display: none;
 }
-.nav-menu > ul {
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3) ;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
     display:flex;
-}
-.nav-menu ul li{
-    width: max-content;
-    font-size: 3vh;
-    font-weight: 600;
-    padding: 8px 25px;
-    align-content: center;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-}
-.nav-menu li:hover,
-.nav-menu li:focus {
-    color:rgb(156, 151, 151);
-    transition: 0.5s;
-    background-color:rgb(156, 151, 151);
-}
-.nav-menu li ul {
-    position: absolute;
-    width: 0;
-    overflow: hidden;
+    justify-content:flex-end;
 }
 
-.nav-menu li  a{
-color:#2d2e2e;
+.menu li{
+    border-right: 1px solid #FFF;
 }
-.nav-menu li li {
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
     display: block;
-    width: 100%;
-    background-color: #e0e0e1;
+    padding: 15px 20px;
+    color: #2d2e2e;
+    text-decoration: none;
 }
-.nav-menu li:hover li a,
-.nav-menu li:focus li a {
-    display: block;
-}
-.nav-menu  li:hover,
-.nav-menu  li:focus { background-color:#Ffc215;
+/* Seccion Formulario*/
 
+.contenedor{display: flex;
 }
-.nav-menu li:hover ul,
-.nav-menu li:focus ul {
-    width: 100%;
-    
-}
-
-
- /* Seccion Formulario*/
-
- .contenedor{display: flex;
-}
- .cabecera{
+.cabecera{
     background-color:#e0e0e1 ;
     padding: 1vh;
     margin: auto;
@@ -121,7 +107,7 @@ color:#2d2e2e;
     font-family: inherit;
     font-size: 1rem;
     padding: 12px;
-     width: 100%;
+    width: 100%;
 }
 
 .form-control, inout:focus {
@@ -213,7 +199,6 @@ h2{
     margin-bottom: 30px;
     font-family:Noto Sans Mono, monospace;
     color:#2d2e2e;
-   
 }
 
 
@@ -308,7 +293,6 @@ margin-bottom: 4vh;
     width: 300px;
     height: 350px;
     margin:3vh 3vw
-  
     }
     
     .card .face {
@@ -350,7 +334,6 @@ margin-bottom: 4vh;
         transform: perspective(600px) rotateY(180deg);
         background:#E5890A ;
         padding: 15px;
-      
         display:flex;
         flex-direction:column;
         justify-content:space-between;
@@ -397,32 +380,35 @@ margin-bottom: 4vh;
 
 
 /*MEDIA QUERY TABLETS*/
-@media(max-width:756px){
+@media(max-width:768px){
     .logo{ 
         height: max-content;
-        width: max-content;
-        margin-left:2vw ;
-        margin-right: 3vw;
+        width: 100%;
         font-size:4vh;
+        color: #2d2e2e;
+        background-color: #Ffc215;
     }
-    .nav-label, .nav-input{
-        display:none;
+    header label{
+        display: block;
     }
-   .contenedor-nav{
-    width: 100vw;
-   }
-    .nav-menu ul li{
-        
-        padding: 8px 5px;
-        align-content: center;
-        text-transform: uppercase;
-        
+    .menu{
+        position: absolute;
+        background: #e0e0e1;
+        width: 40%;
+        margin-left: -40%;
+        transition: all 0.5s;
     }
-    .nav-menu ul li>a{
-        font-weight:900;
-        font-size: 2vh;
-        
+    .menu ul{
+        flex-direction: column;
     }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin:0;
+    }
+    
     /*seccion contacto*/
     .contenedor h2{
         font-weight:900;
@@ -459,58 +445,20 @@ margin-bottom: 4vh;
         color: black;
         font-weight: bold;
     }
-   .card{
+    .card{
     height:300px;
     width:200px;
-   }
-   .card:hover{
+    }
+    .card:hover{
     height:300px;
     width:200px;
 }
 
-   }
+    }
 
 /*MEDIA QUERY DISPOSITIVOS PEQUENOS*/
 @media(max-width:576px){
-    /*navegador*/
-    .nav-label{
-        cursor: pointer; 
-        display: block;
-    }
-    .nav-menu {
-        position: fixed;
-        top:20vh;
-        bottom: 0;
-        text-align: center;
-        transition: all .5s;
-        height: calc(100% -20vh);
-        overflow-y: auto;
-    }
-    .nav-menu ul{
-        background-color:#e0e0e1 ;
-        width: 100vw;
-        height:80vh;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-}
-.nav-input:checked + .nav-menu ul{
-    clip-path: circle(100% at center);
-}
-.nav-menu ul li a{
-font-size: 3vh;
-}
-.nav-menu li ul {
-    height: 0;
-    overflow: hidden;
-}
-.nav-menu li:hover ul, .nav-menu li:focus ul {
-    height:auto;
-    width: 150%;
-    position: absolute;
-    background-color:#Ffc215;
-}
+    
 footer ul li a { display:none;}
 
 h2{margin-top: 3vh;

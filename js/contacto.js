@@ -10,7 +10,7 @@ window.addEventListener ('load' , ()=>{
     form.addEventListener('submit' , (e) => {
     e.preventDefault()
     validaCampos()
-          })
+        })
     const validaCampos = ()=> {
         //capturar los valores ingresados por el usuario
         const usuarioValor = usuario.value.trim()
@@ -33,16 +33,16 @@ window.addEventListener ('load' , ()=>{
         }else if(!validaEmail(emailValor)) {
             validaFalla(email, 'El e-mail no es valido')
             }else {
-                   validaOk(email)
-     }
-     }
+                validaOk(email)
+    }
+    }
      //validando campo password
-     const er = /^(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]). {6,18}$/
-     if(!passValor) {
+    const er = /^(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]). {6,18}$/
+    if(!passValor) {
         validaFalla(pass, 'campo vacio')
         } else if (passValor.length < 8){
             validaOk(pass, 'Debe tener 8 caracteres como minimo.')
-     } else if(!passValor.match(er)) {
+    } else if(!passValor.match(er)) {
         validaFalla(pass, 'Debe tener al menos una may., una min. y un num.')
     } else {
         validaOk(pass)
@@ -63,17 +63,17 @@ window.addEventListener ('load' , ()=>{
     aviso.innerText = msje
     
     formControl.className = 'form-control falla'
-     }
+    }
     
-     const validaOk =(input, msje) => {
+    const validaOk =(input, msje) => {
         const formControl = input.parentElement
         formControl.className = 'form-control ok'
-     }
+    }
     
-     const validaEmail = (email) => {
+    const validaEmail = (email) => {
         return value
-     }
-      })
+    }
+    })
 
 //api placeholder
 
