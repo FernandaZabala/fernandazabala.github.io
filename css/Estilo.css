@@ -249,12 +249,13 @@ h2{
 /*seccion principal  Carrusel recetas*/
 .carrusel{
     margin-top:1px ;
-    height:70vh;
+    height:90vh;
     display:flex;
     align-items: center;
-margin-bottom: 4vh;
+    margin-bottom: 4vh;
+    background-color: #e0e0e1;
 }
- h2{
+h2{
     margin-top: 2vh;
     text-align: center;
     font-size: 5vh;
@@ -266,8 +267,8 @@ margin-bottom: 4vh;
     overflow-y: hidden;
 }
 .carrusel-img{
-    min-width: 35vw;
-    max-height:50vh;
+    min-width: 50vw;
+    max-height:70vh;
     cursor:pointer;
 }
 .carrusel-img img{
