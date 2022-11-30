@@ -24,7 +24,7 @@ header{
     margin-left: 0;
     padding-left: 5%;
     font-family: Grand Hotel, cursive ;
-    font-size:5vh;
+    font-size:6vh;
     color: #2d2e2e;
     background-color: #Ffc215 ;
 }
@@ -388,15 +388,19 @@ margin-bottom: 4vh;
         color: #2d2e2e;
         background-color: #Ffc215;
     }
+    h2{margin-top: 3vh;
+        font-size: 2vh ;
+    }
     header label{
         display: block;
     }
     .menu{
         position: absolute;
         background: #e0e0e1;
-        width: 40%;
-        margin-left: -40%;
+        width: 50%;
+        margin-left: -50%;
         transition: all 0.5s;
+        z-index: 2;
     }
     .menu ul{
         flex-direction: column;
@@ -462,7 +466,11 @@ margin-bottom: 4vh;
 footer ul li a { display:none;}
 
 h2{margin-top: 3vh;
-    font-size:3vh ;
+    font-size: 2vh ;
+}
+.menu{
+    position: absolute;
+    z-index: 2;
 }
 .carrusel{
     height: 90%;
