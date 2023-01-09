@@ -156,7 +156,7 @@ footer{
 footer ul{
     width: 100%;
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
     background-color:#e0e0e1;
 }
@@ -168,15 +168,17 @@ footer ul li  {
     text-transform: uppercase;
 }
 footer ul li:hover{
-    background-color: #Ffc215;
+    background-color:white;
     transition:0.5s;
 }
+/*
 footer ul li a {
     
     font-size: 3vh;
     font-weight: bold;
     color:#2d2e2e;
 }
+*/
 /*main quienes somos*/
 
 .flex-containerqs {
@@ -444,12 +446,14 @@ h2{
     footer ul li  {
         font-size:5vh ;
     }
+    /*
     footer ul li a {
         font-family:Noto Sans Mono, monospace ;
         font-size: 3vh;
         color: black;
         font-weight: bold;
     }
+    */
     .card{
     height:300px;
     width:200px;
