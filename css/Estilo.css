@@ -387,13 +387,27 @@ h2{
     .logo{ 
         height: max-content;
         width: 100%;
-        font-size:4vh;
+        font-size:5vh;
         color: #2d2e2e;
         background-color: #Ffc215;
     }
     h2{margin-top: 3vh;
-        font-size: 2vh ;
+        font-size: 3vh;
+        font-weight: bold;
     }
+    .parrafo p{
+        font-size: 2vh;
+    }
+    .caja2 p{
+        font-size: 3vh;
+    }
+    .caja3 p{
+        font-size: 2vh;
+    }
+    .caja4 p{
+        font-size: 2vh;
+    }
+
     header label{
         display: block;
     }
@@ -468,7 +482,7 @@ h2{
 /*MEDIA QUERY DISPOSITIVOS PEQUENOS*/
 @media(max-width:576px){
     
-footer ul li a { display:none;}
+/*footer ul li a { display:none;}*/
 
 h2{margin-top: 3vh;
     font-size: 2vh ;
@@ -497,8 +511,8 @@ h2{margin-top: 3vh;
     height:300px;
 }
 
-.parrafo{
-    font-size: 4vh;
+.parrafo p{
+    font-size: 2vh;
 }
 
 #formulario{
@@ -510,9 +524,7 @@ h2{margin-top: 3vh;
 #form-control label{
     font-size:1vh;
 }
-.parrafo{
-    font-size: 1rem;
-}
+
 .nombres{
     font-size: 0.5rem;
 }
