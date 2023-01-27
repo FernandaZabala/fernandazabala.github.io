@@ -209,7 +209,7 @@ h2{
     font-size: 2vw;
     width: 80%;
     height: auto;
-    text-align: justify;
+    text-align: left;
     margin: auto;
     margin-bottom: 15px;
     padding: 30px;
@@ -217,9 +217,7 @@ h2{
 
 .caja3{
     background-color:#e0e0e1 ;
-    
     font-size: 1.5vw;
-    font-style: normal;
     width: 60%;
     height: auto;
     text-align: left;
@@ -229,13 +227,11 @@ h2{
     text-align: center;
     border-radius: 40px;
     line-height: 4vw;
-    font-family:Noto Sans Mono, monospace;
 }
 .caja4{
     background-color:#Ffc215;
     font-size: 1.8vw;
     font-weight: bold;
-    
     text-align: center;
     width: 100%;
     height: auto;
@@ -528,6 +524,9 @@ h2{margin-top: 3vh;
 .nombres{
     font-size: 0.5rem;
 }
+
+.caja2 p{
+    font-size: 2vh;
 }
 
 
